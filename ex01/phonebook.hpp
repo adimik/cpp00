@@ -6,7 +6,7 @@
 /*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:03:09 by didimitr          #+#    #+#             */
-/*   Updated: 2025/10/02 18:07:35 by didimitr         ###   ########.fr       */
+/*   Updated: 2025/10/06 15:31:59 by didimitr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ public:
     void addContact();
     void searchContact();
     std::string printFormated(const std::string& text);
+    std::string intToString(int num);
     int  getContactCount();
     void displayContact(unsigned int i);
 };

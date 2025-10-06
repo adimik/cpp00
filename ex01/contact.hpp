@@ -6,11 +6,14 @@
 /*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 10:57:14 by didimitr          #+#    #+#             */
-/*   Updated: 2025/10/02 13:49:40 by didimitr         ###   ########.fr       */
+/*   Updated: 2025/10/06 15:22:25 by didimitr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+
+# include <string>
 
 class Contact {
 private: 
@@ -21,15 +24,17 @@ private:
     std::string darkestSecret;
 
 public:
-    void setFirstName(const std::string& fn) { firstName = fn; }
-    void setLastName(const std::string& ln) { lastName = ln; }
-    void setNickname(const std::string& nn) { nickname = nn; }
-    void setNumber(const std::string& n) { number = n; }
-    void setDarkestSecret(const std::string& ds) { darkestSecret = ds; }
+    void setFirstName(const std::string& fn);
+    void setLastName(const std::string& ln);
+    void setNickname(const std::string& nn);
+    void setNumber(const std::string& n);
+    void setDarkestSecret(const std::string& ds);
 
-    std::string getFirstName() const { return firstName; }
-    std::string getLastName() const { return lastName; }
-    std::string getNickname() const { return nickname; }
-    std::string getNumber() const { return number; }
-    std::string getDarkestSecret() const { return darkestSecret; }
+    std::string getFirstName() const;
+    std::string getLastName() const;
+    std::string getNickname() const;
+    std::string getNumber() const;
+    std::string getDarkestSecret() const;
 };
+
+#endif
